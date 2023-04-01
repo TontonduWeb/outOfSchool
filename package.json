@@ -1,5 +1,5 @@
 {
-  "name": "interstellar-inclination",
+  "name": "cv-numerique",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,6 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.1.9"
+    "@astrojs/solid-js": "^2.1.0",
+    "astro": "^2.1.9",
+    "solid-js": "^1.7.0"
   }
 }
