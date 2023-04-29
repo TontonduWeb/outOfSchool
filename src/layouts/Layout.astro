@@ -30,6 +30,7 @@ const { mainTitle } = Astro.props;
     );
   }
   html {
+    cursor: url("/public/cursor.png"), auto !important;
     font-family: system-ui, sans-serif;
     background-color: #f6f6f6;
   }
@@ -37,4 +38,8 @@ const { mainTitle } = Astro.props;
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   }
+
+  /* .customCursor {
+    cursor: url("/public/cursor.svg"), auto;
+  } */
 </style>
