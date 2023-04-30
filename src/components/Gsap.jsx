@@ -1,8 +1,8 @@
 
-import './Solid.css';
+import './Gsap.css';
 import { gsap } from "gsap";
 
-export function MySolidComponent(props) {
+export function MyGsapComponent(props) {
 
   const rainbowHover = (el) => {
     const colorSetter = gsap.quickSetter(el, "backgroundColor");
@@ -36,7 +36,7 @@ export function MySolidComponent(props) {
         use:rainbowHover
         class="secondEl"
       />
-    </div>;
+    </div>
       </>
     )
   }
