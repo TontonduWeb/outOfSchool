@@ -1,22 +1,22 @@
 ---
-import { MyGsapComponent } from "../components/Gsap";
-import TranslateX from "../components/TranslateX";
+import ScaleUp from "../components/ScaleUp";
+import Timeline from "../components/Timeline";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout mainTitle="Introduction">
   <main>
-    <TranslateX client:load />
-    <TranslateX client:load />
-    <MyGsapComponent client:load name="Gsap" />
+    <Timeline client:load />
+    <ScaleUp duration="2000" delay="1000" client:load />
   </main>
 </Layout>
 
 <style>
   main {
-    background-color: rgb(76, 69, 69);
-    margin: auto;
-    padding: 1.5rem;
-    max-width: 60ch;
+    /* background-color: rgb(76, 69, 69); */
+    background-image: url("/background.jpg");
+    height: 100vh;
+    margin: 0;
+    padding: 0;
   }
 </style>
