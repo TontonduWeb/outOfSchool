@@ -1,13 +1,104 @@
 ---
 import ScaleUp from "../components/ScaleUp";
 import Timeline from "../components/Timeline";
+import TranslateX from "../components/TranslateX";
+import TranslateXText from "../components/TranslateXText";
+import Audio from "../components/Audio";
 import Layout from "../layouts/Layout.astro";
+import ScaleUpGif from "../components/ScaleUpGif";
+import TranslateXMultiple from "../components/TranslateXMultiple";
+import ScaleUpMultiple from "../components/ScaleUpMultiple";
 ---
 
 <Layout mainTitle="Introduction">
   <main>
-    <Timeline client:load />
-    <ScaleUp duration="2000" delay="1000" client:load />
+    <Timeline client:load duration={"90000"} />
+    <Audio client:load />
+    <ScaleUp
+      target="titre"
+      client:load
+      delay={0}
+      endDelay={4000}
+      sentence="Modèle de rendu de page web en 2023"
+    />
+    <TranslateXText
+      client:load
+      target="rendering"
+      translateX="500"
+      delay={2500}
+      duration={3000}
+      endDelay={11500}
+      left={`-left-96`}
+      top={`top-48`}
+      sentence="Rendering Pattern"
+    />
+    <ScaleUpGif
+      client:load
+      target="gifDeveloppement"
+      delay={7000}
+      endDelay={10000}
+      left={`left-0`}
+      right={`right-0`}
+      bottom={`bottom-1/4`}
+      gif="https://giphy.com/embed/2C6v4QD5d3YOO4YhID"
+    />
+    <TranslateXMultiple
+      client:load
+      target="stack"
+      el="stackEl"
+      translateX={-500}
+      delay={10000}
+      delayMulti={200}
+      delayDiv={2}
+      endDelay={1000}
+      src1="css.png"
+      top1="20%;"
+      right1="-20%;"
+      src2="js.png"
+      top2="40%;"
+      right2="-25%;"
+      src3="html.png"
+      top3="45%;"
+      right3="-15%;"
+      src4="node.png"
+      top4="25%;"
+      right4="-10%;"
+    />
+    <ScaleUpMultiple client:load endDelay={5500} />
+    <ScaleUpGif
+      client:load
+      target="gitCeo"
+      delay={12000}
+      endDelay={7800}
+      left={`left-0`}
+      bottom={`bottom-1/4`}
+      gif="https://giphy.com/embed/f03swr0FhG0xJyVga9"
+    />
+    <TranslateXMultiple
+      client:load
+      target="point"
+      el="pointEl"
+      translateX={-500}
+      delay={17000}
+      delayMulti={1000}
+      delayDiv={2.75}
+      endDelay={4000}
+      sentence1="Rapide"
+      sentence2="SEO"
+      sentence3="Administrable"
+      sentence4="Whaou"
+      sentence5="Good Techno"
+      top1="0%;"
+      top2="11%;"
+      top3="22%;"
+      top4="33%;"
+      top5="44%;"
+      left1="101%;"
+      left2="101%;"
+      left3="101%;"
+      left4="101%;"
+      left5="101%;"
+    />
   </main>
 </Layout>
 

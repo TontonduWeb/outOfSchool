@@ -1,35 +1,41 @@
 import anime from "animejs/lib/anime.js";
 import { onMount } from "solid-js";
-import { createSignal } from "solid-js";
 
-export default function TranslateX() {
-  const [count, setCount] = createSignal(0);
+export default function TranslateX(props) {
+  const {
+    image,
+    target,
+    translateX,
+    delay,
+    duration,
+    top,
+    bottom,
+    left,
+    right,
+    alt,
+  } = props;
 
   onMount(() => {
-    setInterval(() => setCount(count() + 1), 1000);
-    setInterval(() => {
-      launchAnimation();
-    }, 2000);
+    launchTranslateX();
   });
 
-  const launchAnimation = () => {
+  const launchTranslateX = () => {
     anime({
-      targets: ".animation",
-      translateX: 250,
-      rotate: "1turn",
-      backgroundColor: "#FFF",
-      duration: 800,
+      targets: `.${target}`,
+      translateX: translateX,
+      delay: delay,
+      duration: duration,
     });
   };
 
   return (
     <>
-      <h1>{count}</h1>
       <div>
-        <img className="animation" src="/user.png" alt="" />
-      </div>
-      <div>
-        <img className="animation" src="/angular.png" alt="" />
+        <img
+          className={`${target} ${top} ${bottom} ${left} ${right} absolute`}
+          src={image}
+          alt={alt}
+        />
       </div>
     </>
   );

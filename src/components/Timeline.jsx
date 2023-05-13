@@ -1,7 +1,8 @@
 import anime from "animejs";
 import { onMount } from "solid-js";
 
-export default function Timeline() {
+export default function Timeline(props) {
+  const { duration } = props;
   onMount(() => {
     fillBox();
   });
@@ -9,7 +10,7 @@ export default function Timeline() {
   const fillBox = () => {
     anime({
       targets: ".progress",
-      duration: 90000,
+      duration: duration,
       easing: "linear",
       update: function (anim) {
         progress.style.width = anim.progress + "%";
