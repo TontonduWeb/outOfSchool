@@ -12,8 +12,10 @@ import ScaleUpMultiple from "../components/ScaleUpMultiple";
 
 <Layout mainTitle="Introduction">
   <main>
-    <Timeline client:load duration={"90000"} />
-    <Audio client:load />
+    <!-- 90000 est 2min30sec -->
+    <!-- 260190 est la durée total de l'animation -->
+    <Timeline client:load duration={"260190"} />
+    <Audio client:load src="contexte.m4a" interval={0} />
     <ScaleUp
       target="titre"
       client:load
@@ -99,6 +101,10 @@ import ScaleUpMultiple from "../components/ScaleUpMultiple";
       left4="101%;"
       left5="101%;"
     />
+    <Audio client:load src="renderingPattern.m4a" interval={29120} />
+    <Audio client:load src="SSR.m4a" interval={39800} />
+    <Audio client:load src="SPA.m4a" interval={110540} />
+    <Audio client:load src="SSG.m4a" interval={171200} />
   </main>
 </Layout>
 
