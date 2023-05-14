@@ -1,7 +1,7 @@
 import anime from "animejs";
 import { onMount } from "solid-js";
 export default function Rotate(props) {
-  const { target, delay, endDelay } = props;
+  const { target, delay, endDelay, right, bottom } = props;
   onMount(() => {
     launchRotate();
   });
@@ -10,7 +10,7 @@ export default function Rotate(props) {
       targets: `.${target} .el`,
       keyframes: [
         {
-          translateX: -500,
+          translateX: -740,
           duration: 1000,
         },
         {
@@ -24,7 +24,9 @@ export default function Rotate(props) {
   };
   return (
     <>
-      <div className={`${target} absolute bottom-44 -right-10`}>
+      <div
+        className={`${target} absolute`}
+        style={`right: ${right}rem; bottom: ${bottom}rem;`}>
         <img className="el h-10 w-10" src="settings.png" alt="" />
       </div>
     </>

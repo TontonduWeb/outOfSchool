@@ -34,7 +34,7 @@ export default function TranslateXText(props) {
     <>
       <div>
         <p
-          className={`${target} ${top} ${bottom} ${left} ${right} absolute w-52 p-4 font-bangers text-yellow-600 shadow-2xl  rounded-3xl shadow-black bg-slate-950 text-5xl flex text-center`}>
+          className={`${target} ${top} ${bottom} ${left} ${right} absolute w-64 min-w-52 p-4 font-bangers text-yellow-600 shadow-2xl rounded-3xl shadow-black bg-slate-950 text-5xl flex text-center`}>
           {sentence}
         </p>
       </div>

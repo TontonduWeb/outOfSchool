@@ -2,8 +2,17 @@ import { onMount } from "solid-js";
 import anime from "animejs/lib/anime.js";
 
 export default function ScaleUpImg(props) {
-  const { target, delay, endDelay, src, bottom, top, right, left, sentence } =
-    props;
+  const {
+    target,
+    delay,
+    endDelay,
+    src,
+    bottom,
+    right,
+    left,
+    sentence,
+    sizeSrc,
+  } = props;
 
   onMount(() => {
     scaleUpImg();
@@ -30,7 +39,11 @@ export default function ScaleUpImg(props) {
             {sentence}
           </p>
         )}
-        <img className={`${target}`} src={src} alt="" />
+        <img
+          className={`${target} w-${sizeSrc} h-${sizeSrc}`}
+          src={src}
+          alt=""
+        />
       </div>
     </>
   );
