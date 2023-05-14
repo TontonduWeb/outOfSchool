@@ -185,8 +185,8 @@ import ScaleUpReverse from "../components/ScaleUpReverse";
       bottom={`bottom-44`}
       src="server.png"
     />
-    <Rotate client:load />
-    <Keyframes client:load />
+    <Rotate client:load target="wheel" delay={7000} endDelay={50000} />
+    <Keyframes client:load target="htmlDoc" delay={11000} endDelay={50000} />
     <ScaleUpImg
       client:load
       sentence="www.presentation.com"
