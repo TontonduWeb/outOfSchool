@@ -2,7 +2,7 @@ import { onMount } from "solid-js";
 import anime from "animejs/lib/anime.js";
 
 export default function ScaleUpGif(props) {
-  const { target, endDelay, delay, left, right, bottom, gif } = props;
+  const { target, endDelay, delay, left, right, bottom, top, gif } = props;
 
   onMount(() => {
     scaleUpGif();
@@ -25,7 +25,7 @@ export default function ScaleUpGif(props) {
       >
         <iframe
           className={`${target} rounded-2xl absolute ${left} ${right}  my-0 mx-auto`}
-          style="bottom: 5%"
+          style={`bottom: ${bottom}%; top: ${top}%;`}
           src={gif}
           width="480"
           height="270"></iframe>

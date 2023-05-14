@@ -10,17 +10,17 @@ export default function ScaleUp(props) {
   const scaleUp = () => {
     anime({
       targets: `.${target}`,
-      scale: [0, 1],
-      delay: delay,
+      keyframes: [{ scale: [0, 1] }],
       endDelay: endDelay,
+      delay: delay,
       direction: "alternate",
-      // easing: "spring(1, 80, 10, 0)",
+      easing: "easeInOutExpo",
     });
   };
 
   return (
     <>
-      <div className="flex justify-center text-center">
+      <div className="absolute flex justify-center text-center">
         <h1
           className={`${target}  w-10/12 font-sourceCodePro text-gray-50 text-7xl`}>
           {sentence}

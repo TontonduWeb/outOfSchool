@@ -3,10 +3,11 @@ import { onMount } from "solid-js";
 
 export default function TranslateX(props) {
   const {
-    image,
+    src,
     target,
     translateX,
     delay,
+    endDelay,
     duration,
     top,
     bottom,
@@ -25,6 +26,8 @@ export default function TranslateX(props) {
       translateX: translateX,
       delay: delay,
       duration: duration,
+      endDelay: endDelay,
+      direction: "alternate",
     });
   };
 
@@ -33,7 +36,7 @@ export default function TranslateX(props) {
       <div>
         <img
           className={`${target} ${top} ${bottom} ${left} ${right} absolute`}
-          src={image}
+          src={src}
           alt={alt}
         />
       </div>

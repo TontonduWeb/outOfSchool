@@ -1,5 +1,6 @@
 ---
 import ScaleUp from "../components/ScaleUp";
+import ScaleUpImg from "../components/ScaleUpImg";
 import Timeline from "../components/Timeline";
 import TranslateX from "../components/TranslateX";
 import TranslateXText from "../components/TranslateXText";
@@ -8,6 +9,9 @@ import Layout from "../layouts/Layout.astro";
 import ScaleUpGif from "../components/ScaleUpGif";
 import TranslateXMultiple from "../components/TranslateXMultiple";
 import ScaleUpMultiple from "../components/ScaleUpMultiple";
+import Keyframes from "../components/Keyframes";
+import Rotate from "../components/Rotate";
+import ScaleUpReverse from "../components/ScaleUpReverse";
 ---
 
 <Layout mainTitle="Introduction">
@@ -15,7 +19,7 @@ import ScaleUpMultiple from "../components/ScaleUpMultiple";
     <!-- 90000 est 2min30sec -->
     <!-- 260190 est la durée total de l'animation -->
     <Timeline client:load duration={"260190"} />
-    <Audio client:load src="contexte.m4a" interval={0} />
+    <!-- <Audio client:load src="contexte.m4a" interval={0} />
     <ScaleUp
       target="titre"
       client:load
@@ -29,7 +33,7 @@ import ScaleUpMultiple from "../components/ScaleUpMultiple";
       translateX="500"
       delay={2500}
       duration={3000}
-      endDelay={11500}
+      endDelay={16500}
       left={`-left-96`}
       top={`top-48`}
       sentence="Rendering Pattern"
@@ -54,16 +58,16 @@ import ScaleUpMultiple from "../components/ScaleUpMultiple";
       delayDiv={2}
       endDelay={1000}
       src1="css.png"
-      top1="20%;"
-      right1="-20%;"
       src2="js.png"
-      top2="40%;"
-      right2="-25%;"
       src3="html.png"
-      top3="45%;"
-      right3="-15%;"
       src4="node.png"
+      top1="20%;"
+      top2="40%;"
+      top3="45%;"
       top4="25%;"
+      right1="-20%;"
+      right2="-25%;"
+      right3="-15%;"
       right4="-10%;"
     />
     <ScaleUpMultiple client:load endDelay={5500} />
@@ -71,7 +75,7 @@ import ScaleUpMultiple from "../components/ScaleUpMultiple";
       client:load
       target="gitCeo"
       delay={12000}
-      endDelay={7800}
+      endDelay={7000}
       left={`left-0`}
       bottom={`bottom-1/4`}
       gif="https://giphy.com/embed/f03swr0FhG0xJyVga9"
@@ -84,7 +88,7 @@ import ScaleUpMultiple from "../components/ScaleUpMultiple";
       delay={17000}
       delayMulti={1000}
       delayDiv={2.75}
-      endDelay={4000}
+      endDelay={3200}
       sentence1="Rapide"
       sentence2="SEO"
       sentence3="Administrable"
@@ -102,9 +106,167 @@ import ScaleUpMultiple from "../components/ScaleUpMultiple";
       left5="101%;"
     />
     <Audio client:load src="renderingPattern.m4a" interval={29120} />
-    <Audio client:load src="SSR.m4a" interval={39800} />
-    <Audio client:load src="SPA.m4a" interval={110540} />
-    <Audio client:load src="SSG.m4a" interval={171200} />
+    <ScaleUp
+      target="titreRenderingPattern"
+      client:load
+      delay={29120}
+      endDelay={4000}
+      sentence="Qu'est ce qu'un rendering pattern ?"
+    />
+    <TranslateX
+      client:load
+      target="web"
+      translateX={700}
+      delay={30620}
+      endDelay={1500}
+      duration={3000}
+      left={`-left-96`}
+      top={`top-96`}
+      src="web.png"
+    />
+    <TranslateXMultiple
+      client:load
+      target="htmlCssJs"
+      el="htmlCssJsEl"
+      translateX={-650}
+      delay={35120}
+      delayMulti={1000}
+      delayDiv={2.75}
+      endDelay={500}
+      src1="html.png"
+      src2="css.png"
+      src3="js.png"
+      top1="30%;"
+      top2="45%;"
+      top3="60%;"
+      right1="-15%;"
+      right2="-15%;"
+      right3="-15%;"
+    /> -->
+    <!-- <Audio client:load src="SSR.m4a" interval={39800} /> -->
+    <Audio client:load src="SSR.m4a" interval={0} />
+    <ScaleUp
+      client:load
+      target="differentRenderingPattern"
+      delay={0}
+      endDelay={33000}
+      sentence="Les différents rendering pattern"
+    />
+    <TranslateXText
+      client:load
+      target="ssr"
+      translateX="500"
+      delay={500}
+      duration={3000}
+      endDelay={30500}
+      left={`-left-96`}
+      top={`top-48`}
+      sentence="Server Side Rendering"
+    />
+    <TranslateX
+      client:load
+      target="webSSR"
+      translateX={700}
+      delay={6000}
+      endDelay={27500}
+      duration={4000}
+      left={`-left-96`}
+      top={`top-96`}
+      src="web.png"
+    />
+    <TranslateX
+      client:load
+      target="server"
+      translateX={-700}
+      delay={6500}
+      endDelay={27000}
+      duration={4000}
+      right={`-right-96`}
+      bottom={`bottom-44`}
+      src="server.png"
+    />
+    <Rotate client:load />
+    <Keyframes client:load />
+    <ScaleUpImg
+      client:load
+      sentence="www.presentation.com"
+      src="arrow.png"
+      target="arrow"
+      delay={12000}
+      endDelay={27000}
+      left={0}
+      right={0}
+      bottom={18}
+    />
+    <ScaleUpImg
+      client:load
+      src="fast.png"
+      sentence="Rapide"
+      target="fast"
+      delay={20000}
+      endDelay={22000}
+      right={2.5}
+      bottom={19}
+    />
+    <ScaleUpImg
+      client:load
+      src="seo.png"
+      sentence="SEO"
+      target="seo"
+      delay={21500}
+      endDelay={22000}
+      right={2.5}
+      bottom={10}
+    />
+    <ScaleUpImg
+      client:load
+      src="access.png"
+      sentence="Accessible"
+      target="access"
+      delay={23000}
+      endDelay={22000}
+      right={2.5}
+      bottom={2}
+    />
+    <ScaleUpReverse
+      client:load
+      src="js.png"
+      target="jsReverse"
+      delay={27000}
+      endDelay={19000}
+      left={20}
+      top={24}
+    />
+    <ScaleUpGif
+      client:load
+      target="gifBadNetwork"
+      delay={35000}
+      endDelay={12000}
+      left={`left-0`}
+      bottom={5}
+      gif="https://giphy.com/embed/OijlHruJk544wGchMP"
+    />
+    <ScaleUpGif
+      client:load
+      target="googleRanking"
+      delay={46000}
+      endDelay={10000}
+      right={`right-0`}
+      top={15}
+      gif="https://giphy.com/embed/Qdny09SRG11Be"
+    />
+    <ScaleUpGif
+      client:load
+      target="accessibility"
+      delay={52500}
+      endDelay={6000}
+      right={`right-0`}
+      left={`left-0`}
+      bottom={2.5}
+      gif="https://giphy.com/embed/0ozmBje9bTxfPlKO7m"
+    />
+    <!-- <Audio client:load src="SPA.m4a" interval={110540} />
+    <Audio client:load src="SSG.m4a" interval={171200} /> -->
   </main>
 </Layout>
 
