@@ -25,7 +25,7 @@ export default function Rotate(props) {
   return (
     <>
       <div className={`${target} absolute bottom-44 -right-10`}>
-        <img className="square el h-10 w-10" src="settings.png" alt="" />
+        <img className="el h-10 w-10" src="settings.png" alt="" />
       </div>
     </>
   );
