@@ -19,12 +19,12 @@ import ScaleUpReverse from "../components/ScaleUpReverse";
     <!-- 90000 est 2min30sec -->
     <!-- 260190 est la durée total de l'animation -->
     <Timeline client:load duration={"260190"} />
-    <!-- <Audio client:load src="contexte.m4a" interval={0} />
+    <Audio client:load src="contexte.m4a" interval={0} />
     <ScaleUp
       target="titre"
       client:load
       delay={0}
-      endDelay={4000}
+      endDelay={14000}
       sentence="Modèle de rendu de page web en 2023"
     />
     <TranslateXText
@@ -45,23 +45,23 @@ import ScaleUpReverse from "../components/ScaleUpReverse";
       endDelay={10000}
       left={`left-0`}
       right={`right-0`}
-      bottom={`bottom-1/4`}
+      bottom={5}
       gif="https://giphy.com/embed/2C6v4QD5d3YOO4YhID"
     />
     <TranslateXMultiple
       client:load
       target="stack"
       el="stackEl"
-      translateX={-500}
+      translateX={-850}
       delay={10000}
       delayMulti={200}
       delayDiv={2}
-      endDelay={1000}
+      endDelay={8000}
       src1="css.png"
       src2="js.png"
       src3="html.png"
       src4="node.png"
-      top1="20%;"
+      top1="23%;"
       top2="40%;"
       top3="45%;"
       top4="25%;"
@@ -77,14 +77,14 @@ import ScaleUpReverse from "../components/ScaleUpReverse";
       delay={12000}
       endDelay={7000}
       left={`left-0`}
-      bottom={`bottom-1/4`}
+      bottom={5}
       gif="https://giphy.com/embed/f03swr0FhG0xJyVga9"
     />
     <TranslateXMultiple
       client:load
       target="point"
       el="pointEl"
-      translateX={-500}
+      translateX={-325}
       delay={17000}
       delayMulti={1000}
       delayDiv={2.75}
@@ -94,11 +94,11 @@ import ScaleUpReverse from "../components/ScaleUpReverse";
       sentence3="Administrable"
       sentence4="Whaou"
       sentence5="Good Techno"
-      top1="0%;"
-      top2="11%;"
-      top3="22%;"
-      top4="33%;"
-      top5="44%;"
+      top1="40%;"
+      top2="51%;"
+      top3="62%;"
+      top4="73%;"
+      top5="84%;"
       left1="101%;"
       left2="101%;"
       left3="101%;"
@@ -142,17 +142,17 @@ import ScaleUpReverse from "../components/ScaleUpReverse";
       right1="-15%;"
       right2="-15%;"
       right3="-15%;"
-    /> -->
+    />
     <!-- <Audio client:load src="SSR.m4a" interval={39800} /> -->
-    <Audio client:load src="SSR.m4a" interval={0} />
+    <Audio client:load src="SSR.m4a" interval={39800} />
     <ScaleUp
       client:load
       target="differentRenderingPattern"
-      delay={0}
-      endDelay={33000}
+      delay={39800}
+      endDelay={72800}
       sentence="Les différents rendering pattern"
     />
-    <TranslateXText
+    <!-- <TranslateXText
       client:load
       target="ssr"
       translateX="500"
@@ -264,7 +264,7 @@ import ScaleUpReverse from "../components/ScaleUpReverse";
       left={`left-0`}
       bottom={2.5}
       gif="https://giphy.com/embed/0ozmBje9bTxfPlKO7m"
-    />
+    /> -->
     <!-- <Audio client:load src="SPA.m4a" interval={110540} />
     <Audio client:load src="SSG.m4a" interval={171200} /> -->
   </main>
