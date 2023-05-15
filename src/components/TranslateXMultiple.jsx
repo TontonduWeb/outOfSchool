@@ -1,7 +1,5 @@
 import anime from "animejs/lib/anime.js";
 import { onMount } from "solid-js";
-import "./Multiple.css";
-import "./Anime.css";
 
 export default function TranslateXMultiple(props) {
   const {
