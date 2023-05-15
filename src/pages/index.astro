@@ -22,7 +22,7 @@ import Motion from "../components/Motion";
     <!-- 90000 est 2min30sec -->
     <!-- 260190 est la durée total de l'animation -->
     <Timeline client:load duration={"260190"} />
-    <!-- <Audio client:load src="contexte.m4a" interval={0} />
+    <Audio client:load src="contexte.m4a" interval={0} />
     <ScaleUp
       target="titre"
       client:load
@@ -146,13 +146,12 @@ import Motion from "../components/Motion";
       right2="-15%;"
       right3="-15%;"
     />
-    // <Audio client:load src="SSR.m4a" interval={39800} />
     <Audio client:load src="SSR.m4a" interval={39800} />
     <ScaleUp
       client:load
       target="differentRenderingPattern"
       delay={39800}
-      endDelay={33000}
+      endDelay={91600}
       sentence="Les différents rendering pattern"
     />
     <TranslateXText
@@ -188,11 +187,19 @@ import Motion from "../components/Motion";
       bottom={`bottom-44`}
       src="server.png"
     />
-    <Rotate client:load target="wheel" delay={46800} endDelay={50000} />
+    <Rotate
+      client:load
+      target="wheel"
+      delay={46800}
+      endDelay={50000}
+      translateX={-500}
+      bottom={11}
+      right={-2.5}
+    />
     <Keyframes client:load target="htmlDoc" delay={50800} endDelay={50000} />
     <ScaleUpImg
       client:load
-      sentence="www.presentation.com"
+      sentence="www.outofschool.com"
       src="arrow.png"
       target="arrow"
       delay={51800}
@@ -267,14 +274,14 @@ import Motion from "../components/Motion";
       left={`left-0`}
       bottom={2.5}
       gif="https://giphy.com/embed/0ozmBje9bTxfPlKO7m"
-    /> -->
+    />
     <!-- <Audio client:load src="SPA.m4a" interval={110540} /> -->
-    <Audio client:load src="SPA.m4a" interval={0} />
+    <Audio client:load src="SPA.m4a" interval={110540} />
     <TranslateXText
       client:load
       target="spa"
       translateX="500"
-      delay={0}
+      delay={110540}
       duration={3000}
       endDelay={27300}
       left={`-left-96`}
@@ -286,7 +293,7 @@ import Motion from "../components/Motion";
       src="clientside.png"
       sizeSrc={64}
       target="clientside"
-      delay={6000}
+      delay={116540}
       endDelay={26300}
       left={0}
       right={0}
@@ -297,7 +304,7 @@ import Motion from "../components/Motion";
       target="htmlCssJs2"
       el="htmlCssJsEl2"
       translateX={-900}
-      delay={10000}
+      delay={120540}
       delayMulti={1000}
       delayDiv={2.75}
       endDelay={17300}
@@ -314,7 +321,7 @@ import Motion from "../components/Motion";
     <ScaleUpGif
       client:load
       target="clientSide"
-      delay={17500}
+      delay={128040}
       endDelay={20300}
       left={`left-0`}
       bottom={5}
@@ -324,7 +331,7 @@ import Motion from "../components/Motion";
       client:load
       src="js.png"
       target="jsClientSide"
-      delay={15000}
+      delay={125540}
       endDelay={21000}
       right={0}
       left={0}
@@ -333,8 +340,9 @@ import Motion from "../components/Motion";
     <Rotate
       client:load
       target="wheel2"
-      delay={17500}
+      delay={128040}
       endDelay={31000}
+      translateX={-740}
       right={-5}
       bottom={15}
     />
@@ -342,7 +350,7 @@ import Motion from "../components/Motion";
       client:load
       src="api.png"
       target="api"
-      delay={29500}
+      delay={140040}
       endDelay={15000}
       right={36}
       bottom={30}
@@ -352,7 +360,7 @@ import Motion from "../components/Motion";
       target="loop1"
       el="loopEl1"
       translate="270"
-      delay={29500}
+      delay={140040}
       endDelay={10000}
       right={36}
       bottom={35}
@@ -362,7 +370,7 @@ import Motion from "../components/Motion";
       target="loop2"
       el="loopEl2"
       translate="-270"
-      delay={29500}
+      delay={140040}
       endDelay={10000}
       right={37}
       bottom={15}
@@ -372,7 +380,7 @@ import Motion from "../components/Motion";
       target="loop3"
       el="loopEl3"
       translate="270"
-      delay={29600}
+      delay={140140}
       endDelay={10000}
       right={38}
       bottom={35}
@@ -382,7 +390,7 @@ import Motion from "../components/Motion";
       target="loop4"
       el="loopEl4"
       translate="-270"
-      delay={29600}
+      delay={140140}
       endDelay={10000}
       right={39}
       bottom={15}
@@ -390,7 +398,7 @@ import Motion from "../components/Motion";
     <ScaleUpGif
       client:load
       target="badSetup"
-      delay={46500}
+      delay={157040}
       endDelay={5000}
       right={`right-0`}
       bottom={40}
@@ -399,7 +407,7 @@ import Motion from "../components/Motion";
     <ScaleUpGif
       client:load
       target="googleGetNothing"
-      delay={55500}
+      delay={166040}
       endDelay={750}
       right={`right-0`}
       bottom={5}
@@ -410,7 +418,7 @@ import Motion from "../components/Motion";
       target="motion1"
       el="motionEl1"
       translateX={-100}
-      delay={34500}
+      delay={145040}
       endDelay={5000}
       right={-5}
       bottom={75}
@@ -419,7 +427,7 @@ import Motion from "../components/Motion";
       client:load
       src="non-access.png"
       target="non-access"
-      delay={58000}
+      delay={168540}
       endDelay={500}
       right={12}
       bottom={40}

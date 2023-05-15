@@ -35,7 +35,7 @@ export default function Motion(props) {
           id="ePHOwY1m93I1"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 550 550"
+          viewBox="0 0 450 450"
           shape-rendering="geometricPrecision"
           text-rendering="geometricPrecision">
           <path

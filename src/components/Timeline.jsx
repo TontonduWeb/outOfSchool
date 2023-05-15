@@ -39,8 +39,8 @@ export default function Timeline(props) {
         <div
           ref={timeline}
           id="timeline"
-          className="m-0 h-10 bg-red-500 text-gray-50"></div>
-        <h1 ref={chrono} className="text-5xl absolute text-gray-50"></h1>
+          className="m-0 h-6 absolute bottom-0 bg-red-500 text-gray-50"></div>
+        <h1 ref={chrono} className="text-4xl absolute text-gray-50"></h1>
       </div>
     </>
   );

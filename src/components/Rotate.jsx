@@ -1,7 +1,7 @@
 import anime from "animejs";
 import { onMount } from "solid-js";
 export default function Rotate(props) {
-  const { target, delay, endDelay, right, bottom } = props;
+  const { target, delay, endDelay, right, bottom, translateX } = props;
   onMount(() => {
     launchRotate();
   });
@@ -10,7 +10,7 @@ export default function Rotate(props) {
       targets: `.${target} .el`,
       keyframes: [
         {
-          translateX: -740,
+          translateX: translateX,
           duration: 1000,
         },
         {

@@ -22,7 +22,7 @@ export default function ScaleUp(props) {
     <>
       <div className="absolute flex justify-center text-center">
         <h1
-          className={`${target}  w-10/12 font-sourceCodePro text-gray-50 text-7xl`}>
+          className={`${target} w-3/5 font-sourceCodePro text-gray-50 text-6xl`}>
           {sentence}
         </h1>
       </div>
