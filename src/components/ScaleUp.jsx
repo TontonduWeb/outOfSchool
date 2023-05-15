@@ -20,7 +20,7 @@ export default function ScaleUp(props) {
 
   return (
     <>
-      <div className="absolute flex justify-center text-center">
+      <div className="absolute flex justify-center text-center mx-auto my-4 left-0 right-0">
         <h1
           className={`${target} w-3/5 font-sourceCodePro text-gray-50 text-6xl`}>
           {sentence}

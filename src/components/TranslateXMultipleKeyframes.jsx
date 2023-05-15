@@ -65,7 +65,7 @@ export default function TranslateXMultipleKeyframes(props) {
         <div
           style={`top: ${top1}; right: ${right1}; left: ${left1}`}
           className={`${el} absolute flex flex-row items-center`}>
-          <img src={src1} alt="" />
+          <img className="w-24 h-24" src={src1} alt="" />
           {sentence1 && (
             <p className="p-4 font-bangers text-yellow-600 shadow-2xl rounded-3xl shadow-black bg-slate-950 text-5xl">
               {sentence1}
@@ -75,7 +75,7 @@ export default function TranslateXMultipleKeyframes(props) {
         <div
           style={`top: ${top2}; right: ${right2}; left: ${left2}`}
           className={`${el} absolute flex flex-row items-center`}>
-          <img src={src2} alt="" />
+          <img className="w-24 h-24" src={src2} alt="" />
           {sentence2 && (
             <p className="p-4 font-bangers text-yellow-600 shadow-2xl rounded-3xl shadow-black bg-slate-950 text-5xl">
               {sentence2}
@@ -85,7 +85,7 @@ export default function TranslateXMultipleKeyframes(props) {
         <div
           style={`top: ${top3}; right: ${right3}; left: ${left3}`}
           className={`${el} absolute flex flex-row items-center`}>
-          <img src={src3} alt="" />
+          <img className="w-24 h-24" src={src3} alt="" />
           {sentence3 && (
             <p className="p-4 font-bangers text-yellow-600 shadow-2xl rounded-3xl shadow-black bg-slate-950 text-5xl">
               {sentence3}

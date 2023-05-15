@@ -196,7 +196,20 @@ import Motion from "../components/Motion";
       bottom={11}
       right={-2.5}
     />
-    <Keyframes client:load target="htmlDoc" delay={50800} endDelay={50000} />
+    <Keyframes
+      client:load
+      target="htmlDoc"
+      el="htmlDocEl"
+      src="docStatic.png"
+      delay={50800}
+      endDelay={50000}
+      firstTranslateX={-420}
+      firstTranslateY={-140}
+      delayFirstTransition={3000}
+      secondTranslateX={-1000}
+      right={24}
+      bottom={11}
+    />
     <ScaleUpImg
       client:load
       sentence="www.outofschool.com"
@@ -275,7 +288,6 @@ import Motion from "../components/Motion";
       bottom={2.5}
       gif="https://giphy.com/embed/0ozmBje9bTxfPlKO7m"
     />
-    <!-- <Audio client:load src="SPA.m4a" interval={110540} /> -->
     <Audio client:load src="SPA.m4a" interval={110540} />
     <TranslateXText
       client:load
@@ -432,7 +444,221 @@ import Motion from "../components/Motion";
       right={12}
       bottom={40}
     />
-    <!-- <Audio client:load src="SSG.m4a" interval={171200} /> -->
+    <Audio client:load src="SSG.m4a" interval={171200} />
+    <ScaleUp
+      target="titreSSG"
+      client:load
+      delay={171200}
+      endDelay={100000}
+      sentence="Static Site Generation"
+    />
+    <TranslateXText
+      client:load
+      target="ssg"
+      translateX={500}
+      delay={172200}
+      duration={3000}
+      endDelay={41000}
+      left={`-left-96`}
+      top={`top-48`}
+      sentence="Static Site Generation"
+    />
+    <TranslateXMultiple
+      client:load
+      target="htmlCssJs3"
+      el="htmlCssJsEl3"
+      translateX={-650}
+      delay={177200}
+      delayMulti={1000}
+      delayDiv={2.75}
+      endDelay={38500}
+      src1="html.png"
+      src2="css.png"
+      src3="js.png"
+      top1="30%;"
+      top2="45%;"
+      top3="60%;"
+      right1="-15%;"
+      right2="-15%;"
+      right3="-15%;"
+    />
+    <TranslateX
+      client:load
+      target="web2"
+      el="webEl2"
+      translateX={-1150}
+      delay={175700}
+      endDelay={39000}
+      duration={3000}
+      right={`-right-96`}
+      bottom={`bottom-80`}
+      src="web.png"
+    />
+    <TranslateX
+      client:load
+      target="serverWeb"
+      el="serverWebEl"
+      translateX={-950}
+      delay={176700}
+      endDelay={38000}
+      duration={3000}
+      right={`-right-96`}
+      bottom={`bottom-80`}
+      src="serverWeb.png"
+    />
+    <Rotate
+      client:load
+      target="wheel3"
+      delay={176700}
+      endDelay={72000}
+      translateX={-765}
+      right={-5}
+      bottom={22}
+    />
+    <ScaleUpImg
+      client:load
+      src="clientside.png"
+      target="clientside2"
+      delay={181200}
+      endDelay={38500}
+      right={33}
+      bottom={5}
+    />
+    <ScaleUpImg
+      client:load
+      src="server.png"
+      target="server2"
+      delay={181200}
+      endDelay={38500}
+      right={43}
+      bottom={5}
+    />
+    <ScaleUpImg
+      client:load
+      src="close.png"
+      target="close"
+      delay={182200}
+      endDelay={37500}
+      right={33}
+      bottom={5}
+    />
+    <ScaleUpImg
+      client:load
+      src="close.png"
+      target="close2"
+      delay={182200}
+      endDelay={37500}
+      right={43}
+      bottom={5}
+    />
+    <TranslateXMultiple
+      client:load
+      target="GatsbyHugoAstro"
+      el="GatsbyHugoAstroEl"
+      translateX={-650}
+      delay={185200}
+      delayMulti={1000}
+      delayDiv={2.75}
+      endDelay={35000}
+      src1="gatsby.png"
+      src2="hugo.ico"
+      src3="astro.png"
+      top1="30%;"
+      top2="45%;"
+      top3="60%;"
+      right1="-25%;"
+      right2="-25%;"
+      right3="-25%;"
+    />
+    <TranslateXMultipleKeyframes
+      client:load
+      target="markdownJsonCms"
+      el="markdownJsonCmsEl"
+      translateX={-650}
+      delay={191200}
+      delayMulti={1000}
+      delayDiv={2.75}
+      endDelay={44450}
+      src1="markdown.png"
+      src2="json.png"
+      src3="strapi.png"
+      top1="30%;"
+      top2="45%;"
+      top3="60%;"
+      right1="-35%;"
+      right2="-35%;"
+      right3="-35%;"
+    />
+    <Keyframes
+      client:load
+      target="htmlDoc2"
+      el="htmlDocEl2"
+      src="docStaticHtml.png"
+      delay={194200}
+      endDelay={61000}
+      firstTranslateX={-580}
+      firstTranslateY={-260}
+      delayFirstTransition={1000}
+      secondTranslateX={-1200}
+      right={12}
+      bottom={2}
+    />
+    <Motion
+      client:load
+      target="motion2"
+      el="motionEl2"
+      translateX={-100}
+      delay={203200}
+      endDelay={44450}
+      right={-5}
+      bottom={75}
+    />
+    <TranslateXMultiple
+      client:load
+      target="pointSSG"
+      el="pointSSGEl"
+      translateX={-325}
+      delay={208200}
+      delayMulti={1000}
+      delayDiv={2.75}
+      endDelay={23450}
+      sentence3="Rapide"
+      sentence4="Secure"
+      sentence5="Scalable"
+      top3="62%;"
+      top4="73%;"
+      top5="84%;"
+      left3="101%;"
+      left4="101%;"
+      left5="101%;"
+    />
+    <ScaleUpGif
+      client:load
+      target="fastRendu"
+      delay={221200}
+      endDelay={18000}
+      right={`-right-10`}
+      bottom={70}
+      gif="https://giphy.com/embed/3o7ZetIsjtbkgNE1I4"
+    />
+    <ScaleUpGif
+      client:load
+      target="secure"
+      delay={224200}
+      endDelay={16000}
+      left={`left-0`}
+      bottom={15}
+      gif="https://giphy.com/embed/WGCBh4y9xzNJLIgIpH"
+    />
+    <ScaleUpImg
+      client:load
+      src="js.png"
+      target="js"
+      delay={239200}
+      endDelay={9000}
+      left={24}
+      bottom={20}
+    />
   </main>
 </Layout>
 
